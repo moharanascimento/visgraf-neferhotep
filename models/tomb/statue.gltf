@@ -1,0 +1,146 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v3.6.28",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "3Ddata.001",
+      "rotation": [
+        0.9857592582702637,
+        -0.10967961698770523,
+        -0.03596797585487366,
+        0.12229302525520325
+      ],
+      "scale": [
+        18,
+        18.000003814697266,
+        18.000003814697266
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "5b605ca8-38ee-49ae-9ce6-e98058200369_0",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "3Ddata.001",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    }
+  ],
+  "images": [
+    {
+      "name": "textured_0_v2",
+      "uri": "statue_img0.jpg"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 47790,
+      "max": [
+        0.619693398475647,
+        0.9477811455726624,
+        0.519895076751709
+      ],
+      "min": [
+        -0.8425807952880859,
+        -0.7923204898834229,
+        -0.7299526333808899
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 47790,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 47790,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 256851,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 573480,
+      "byteOffset": 0,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 573480,
+      "byteOffset": 573480,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 382320,
+      "byteOffset": 1146960,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 513704,
+      "byteOffset": 1529280,
+      "target": 34963
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "statue_data.bin",
+      "byteLength": 2042984
+    }
+  ]
+}
