@@ -10,4 +10,4 @@ Library:
 
 <h1> <img height="40" width="40" src= "img/reference.png" />  Reference </h1>
 
-- This code uses as reference the repository: https://github.com/gjmolter/web-3dmodel-threejs. Belonging to Gabriel Molter.
+- This code uses as reference the repository: https://github.com/gjmolter/web-3dmodel-threejs. That belongs to Gabriel Molter.
