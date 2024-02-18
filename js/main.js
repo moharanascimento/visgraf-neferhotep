@@ -94,7 +94,7 @@ document.getElementById("container3D").appendChild(renderer.domElement);
 camera.position.z = objToRender === "tomb" ? 25 : 500;
 
 //Add lights to the scene, so we can actually see the 3D model
-const topLight = new THREE.DirectionalLight(0xffffff, 1); // (color, intensity)
+const topLight = new THREE.DirectionalLight(0xffffff, 0.3); // (color, intensity)
 topLight.position.set(500, 500, 500) //top-left-ish
 topLight.castShadow = true;
 scene.add(topLight);
