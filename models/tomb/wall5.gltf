@@ -1,0 +1,151 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v3.6.28",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "3Ddata",
+      "rotation": [
+        0.9617273807525635,
+        0.14864155650138855,
+        -0.20705199241638184,
+        0.10057643055915833
+      ],
+      "scale": [
+        19,
+        19.0000057220459,
+        19.000003814697266
+      ],
+      "translation": [
+        0,
+        6.509999752044678,
+        7.050000190734863
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "37fc5497-5b27-4716-bc0b-0c213121198c_0",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "3Ddata",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    }
+  ],
+  "images": [
+    {
+      "name": "textured_0_v2",
+      "uri": "wall5_img0.jpg"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 30384,
+      "max": [
+        0.8825629949569702,
+        1.040861964225769,
+        0.9990313053131104
+      ],
+      "min": [
+        -1.1048481464385986,
+        -0.7976608276367188,
+        -0.8684670925140381
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 30384,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 30384,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 167604,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 364608,
+      "byteOffset": 0,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 364608,
+      "byteOffset": 364608,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 243072,
+      "byteOffset": 729216,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 335208,
+      "byteOffset": 972288,
+      "target": 34963
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "wall5_data.bin",
+      "byteLength": 1307496
+    }
+  ]
+}

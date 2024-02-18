@@ -1,0 +1,146 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v3.6.28",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "3Ddata.003",
+      "rotation": [
+        0.9057304859161377,
+        0.13374415040016174,
+        -0.09634899348020554,
+        0.3904893398284912
+      ],
+      "scale": [
+        17,
+        16.999998092651367,
+        17
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "7ebb0feb-bfdf-4218-b4e9-e73fc7599227_0",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "3Ddata.003",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    }
+  ],
+  "images": [
+    {
+      "name": "textured_0_v2",
+      "uri": "wall2_img0.jpg"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 39311,
+      "max": [
+        0.7277371287345886,
+        0.8080588579177856,
+        0.9337781071662903
+      ],
+      "min": [
+        -1.7622244358062744,
+        -0.6822346448898315,
+        -0.9558115005493164
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 39311,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 39311,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 214812,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 471732,
+      "byteOffset": 0,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 471732,
+      "byteOffset": 471732,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 314488,
+      "byteOffset": 943464,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 429624,
+      "byteOffset": 1257952,
+      "target": 34963
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "wall2_data.bin",
+      "byteLength": 1687576
+    }
+  ]
+}

@@ -22,7 +22,7 @@ let controls;
 
 //Set which object to render
 let objToRender = 'tomb';
-let imagesList = ['statue.gltf', 'statue-small.gltf']
+let imagesList = ['statue.gltf', 'wall.gltf', 'wall2.gltf','wall5.gltf']
 let i = 0;
 
 document.getElementById("setaDireita").addEventListener("click", changeImgDir, false);
