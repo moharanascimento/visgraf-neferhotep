@@ -25,8 +25,8 @@ let objToRender = 'tomb';
 let imagesList = ['statue.gltf', 'wall.gltf', 'wall2.gltf','wall5.gltf']
 let i = 0;
 
-document.getElementById("setaDireita").addEventListener("click", changeImgDir, false);
-document.getElementById("setaEsquerda").addEventListener("click", changeImgEsq, false);
+document.getElementById("rightArrow").addEventListener("click", changeImgRight, false);
+document.getElementById("leftArrow").addEventListener("click", changeImgLeft, false);
 
 let imgToRender = imagesList[i];
 
@@ -42,11 +42,11 @@ function callLoad(){
         function (gltf) {
           //If the file is loaded, add it to the scene
           scene.remove(object);
-          controls.reset();
+          controls.reset(); // reset the zoom when the object is changed
           object = gltf.scene;
           scene.add(object);
           camera.position.z=25;
-          controls.saveState();
+          controls.saveState(); //save the first state of zoom
         },
         function (xhr) {
           //While it is loading, log the progress
@@ -60,7 +60,7 @@ function callLoad(){
 }
 
 //Function to change image
-function changeImgDir() {
+function changeImgRight() {
   if (i < imagesList.length-1) {
     i++;
   }
@@ -72,7 +72,7 @@ function changeImgDir() {
 }
 
 //Function to change image
-function changeImgEsq() {
+function changeImgLeft() {
   if (i == 0) {
     i=imagesList.length-1;
   }
@@ -105,7 +105,7 @@ scene.add(ambientLight);
 //This adds controls to the camera, so we can rotate / zoom it with the mouse
 if (objToRender === "tomb") {
   controls = new OrbitControls(camera, renderer.domElement);
-  controls.saveState();
+  controls.saveState(); //save the first state of zoom 
 }
 
 //Render the scene
