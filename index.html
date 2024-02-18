@@ -21,17 +21,19 @@
     <main>
       <div id="title"><h1>Photogrammetry material -  3D Viewer </h1></div>
       <section class="grid1">
-        <div id="seta">
-          <img id="seta" src="img/s-esquerda.png" alt="seta" height="108" width="192">
+        <div class="setas">
+          <button type="button"><img src="img/seta-esquerda.png"
+                  height="70px" onclick="changeImgEsq()"></button>
         </div>
 
         <div id="container3D"></div>
 
-        <div id="seta">
-          <img id="seta" src="img/s-direita.png" alt="seta" height="108" width="192">
+        <div class="setas">
+          <button type="button" style="margin-bottom: 10px;"><img src="img/seta-direita.png"
+                  height="70px" onclick="changeImgDir()"></button>
         </div>
-      </section>
-
+        
+      </section>  
       <p><h2 style="color: white; margin-left: 20px;">&#128712; Use the mouse for zoom and rotate the 3D image.</h2></p>
     </main>
 

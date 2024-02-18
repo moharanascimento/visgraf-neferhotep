@@ -50,6 +50,37 @@ p{
   color: white;
 }
 
+button{
+  background-color: transparent;
+  border: none;
+  border-radius: 50px;
+}
+
+button:hover{
+  background:  #a6a6a6;
+}
+
+button:active{
+  background: #a6a6a6;
+  top: 2px;
+}
+
+button > img{
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 5px;
+}
+
+.setas{
+  display: grid;
+  flex-wrap: wrap;
+  background-color: Transparent;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 
 .grid1{
   display: grid;
@@ -67,4 +98,13 @@ p{
   top: 0;
   left: 0;
   background-color: black;
+}
+
+@media (max-width: 600px){
+  button > img{
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 5px;
+    height: 25px;
+}
 }
