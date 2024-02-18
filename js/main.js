@@ -42,8 +42,11 @@ function callLoad(){
         function (gltf) {
           //If the file is loaded, add it to the scene
           scene.remove(object);
+          controls.reset();
           object = gltf.scene;
           scene.add(object);
+          camera.position.z=25;
+          controls.saveState();
         },
         function (xhr) {
           //While it is loading, log the progress
@@ -102,6 +105,7 @@ scene.add(ambientLight);
 //This adds controls to the camera, so we can rotate / zoom it with the mouse
 if (objToRender === "tomb") {
   controls = new OrbitControls(camera, renderer.domElement);
+  controls.saveState();
 }
 
 //Render the scene
