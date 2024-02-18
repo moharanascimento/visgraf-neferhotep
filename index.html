@@ -1,6 +1,11 @@
 <!--
-  EYE FREE MODEL 3D BY Oscar creativo by OSCAR CREATIVO is licensed under Creative Commons Attribution.
-  Juvenile Teratophoneus curriei byrankinstudio is licensed under Creative Commons Attribution.
+  Create by Mohara Nascimento to VISGRAF Lab
+
+  References materials and codes:
+
+  1. Based on Gabriel Molter code, contained in this repository:
+  https://github.com/gjmolter/web-3dmodel-threejs
+
 -->
 <!DOCTYPE html>
 <html>
@@ -12,7 +17,7 @@
   <body>
     <header>
       <a href="https://visgraflab.impa.br/egypt/" rel="next" target="_self">
-        <img id="icone" src="img/logo-curva-egypt-xr_1.svg" alt="ícone" height="28.8167" width="120">
+        <img id="icone" src="img/logo-egypt-xr_1.svg" alt="ícone" height="28.8167" width="120">
       </a>
       <nav class="neferhotep ml-auto"><a href="https://visgraflab.impa.br/egypt/index.php/2023/11/26/36/" rel="next" target="_self"><strong>Neferhotep 360</strong></a>
       </nav>
@@ -22,19 +27,19 @@
       <div id="title"><h1>Photogrammetry material -  3D Viewer </h1></div>
       <section class="grid1">
         <div class="setas">
-          <button id="setaEsquerda" type="button"><img src="img/seta-esquerda.png"
+          <button id="leftArrow" type="button"><img src="img/left-arrow.png"
                   height="70px"></button>
         </div>
 
         <div id="container3D"></div>
 
         <div class="setas">
-          <button id="setaDireita" type="button" style="margin-bottom: 10px;"><img src="img/seta-direita.png"
+          <button id="rightArrow" type="button" style="margin-bottom: 10px;"><img src="img/right-arrow.png"
                   height="70px"></button>
         </div>
         
       </section>  
-      <p><h2 style="color: white; margin-left: 20px;">&#128712; Use the mouse for zoom and rotate the 3D image.</h2></p>
+      <p><h2 style="color: white; margin-left: 20px;">&#8226; Use the mouse for zoom and rotate the 3D object and use the arrows to change the photogrammetry image.</h2></p>
     </main>
 
     <script type="module" src="js/main.js"></script>
