@@ -22,7 +22,7 @@ let controls;
 
 //Set which object to render
 let objToRender = 'tomb';
-let imagesList = ['statue.gltf', 'wall.gltf', 'wall2.gltf','wall5.gltf']
+let imagesList = ['statue.gltf', 'wall.gltf', 'wall2.gltf','wall5.gltf','mask.gltf']
 let i = 0;
 
 document.getElementById("rightArrow").addEventListener("click", changeImgRight, false);
