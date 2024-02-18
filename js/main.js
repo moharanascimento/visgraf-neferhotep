@@ -22,28 +22,63 @@ let controls;
 
 //Set which object to render
 let objToRender = 'tomb';
-let imgToRender = 'statue.gltf';
+let imagesList = ['statue.gltf', 'statue-small.gltf']
+let i = 0;
+
+document.getElementById("setaDireita").addEventListener("click", changeImgDir, false);
+document.getElementById("setaEsquerda").addEventListener("click", changeImgEsq, false);
+
+let imgToRender = imagesList[i];
 
 //Instantiate a loader for the .gltf file
 const loader = new GLTFLoader();
 
-//Load the file
-loader.load(  
-  `models/${objToRender}/${imgToRender}`,
-  function (gltf) {
-    //If the file is loaded, add it to the scene
-    object = gltf.scene;
-    scene.add(object);
-  },
-  function (xhr) {
-    //While it is loading, log the progress
-    console.log((xhr.loaded / xhr.total * 100) + '% loaded');
-  },
-  function (error) {
-    //If there is an error, log it
-    console.error(error);
+callLoad();
+
+function callLoad(){
+      //Load the file
+      loader.load(
+        `models/${objToRender}/${imgToRender}`,
+        function (gltf) {
+          //If the file is loaded, add it to the scene
+          scene.remove(object);
+          object = gltf.scene;
+          scene.add(object);
+        },
+        function (xhr) {
+          //While it is loading, log the progress
+          console.log((xhr.loaded / xhr.total * 100) + '% loaded');
+        },
+        function (error) {
+          //If there is an error, log it
+          console.error(error);
+        }
+      );
+}
+
+//Function to change image
+function changeImgDir() {
+  if (i < imagesList.length-1) {
+    i++;
   }
-);
+  else{
+    i=0;
+  }
+  imgToRender = imagesList[i];
+  callLoad();
+}
+
+//Function to change image
+function changeImgEsq() {
+  if (i == 0) {
+    i=imagesList.length-1;
+  }
+  else{
+    i--;
+  }
+  imgToRender = imagesList[i];
+  callLoad();
+}
 
 //Instantiate a new renderer and set its size
 const renderer = new THREE.WebGLRenderer({ alpha: true }); //Alpha: true allows for the transparent background
